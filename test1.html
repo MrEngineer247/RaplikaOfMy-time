@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Current Time</title>
+    <script>
+      function updateTime() {
+        const now = new Date();
+        document.getElementById("time").textContent = now.toLocaleTimeString();
+      }
+      setInterval(updateTime, 1000);
+      window.onload = updateTime;
+    </script>
+  </head>
+  <body>
+    <h1>Current Time:</h1>
+    <div id="time"></div>
+  </body>
+</html>
